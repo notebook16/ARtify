@@ -171,7 +171,7 @@ const ImageGenerator = () => {
                 chat.images.map((image, i) => (
                   <div
                     key={i}
-                    className="relative w-80 h-80 border border-gray-300 rounded-lg sm:w-2/3 sm:h-72 md:w-1/2 lg:w-2/4 xl:w-1/4"
+                    className="relative w-80 h-80 border border-gray-300 rounded-lg sm:w-3/5/3 sm:h-72 md:w-1/2 lg:w-3/5 xl:w-1/4"
                   >
                     {/* Download Icon */}
                     <a
