@@ -32,7 +32,7 @@ const ImageGenerator = () => {
 
         try {
           const response = await fetch(
-            "https://artifybackend.onrender.com/api/v1/users/userChat",
+            "http://localhost:8080/api/v1/users/userChat",
             {
               method: "GET",
               credentials: "include",
@@ -75,7 +75,7 @@ const ImageGenerator = () => {
     const requestBody = { prompt, quick };
 
     try {
-      const response = await fetch("https://artifybackend.onrender.com/api/v1/users/chat", {
+      const response = await fetch("http://localhost:8080/api/v1/users/chat", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -171,7 +171,7 @@ const ImageGenerator = () => {
                 chat.images.map((image, i) => (
                   <div
                     key={i}
-                    className="relative w-80 h-80 border border-gray-300 rounded-lg sm:w-2/3 sm:h-72 md:w-1/2 lg:w-2/4 xl:w-1/4"
+                    className="relative w-80 h-80 border border-gray-300 rounded-lg sm:w-2/3 sm:h-72 md:w-1/2 lg:w-2/5 xl:w-1/4"
                   >
                     {/* Download Icon */}
                     <a
@@ -195,8 +195,6 @@ const ImageGenerator = () => {
                         />
                       </svg>
                     </a>
-
-                  {/*w-full h-full border border-gray-300 rounded-lg */}
 
                     {/* Image */}
                     <img
