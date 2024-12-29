@@ -28,7 +28,14 @@ import chatRouter from "./routes/chat.js";
 //   })
 // );
 
-app.use(cors());
+
+app.use(
+  cors({
+    origin: 'https://artifybackend.onrender.com', // Your frontend's URL
+    credentials: true, // Allow cookies to be included
+  })
+);
+
 
 
 
