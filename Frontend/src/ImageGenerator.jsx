@@ -196,11 +196,13 @@ const ImageGenerator = () => {
                       </svg>
                     </a>
 
+                  {/*w-full h-full border border-gray-300 rounded-lg */}
+
                     {/* Image */}
                     <img
                       src={image}
                       alt={`Generated for ${chat.prompt}`}
-                      className="w-full h-full border border-gray-300 rounded-lg"
+                      className="w-80 h-80 border border-gray-300 rounded-lg sm:w-2/3 sm:h-72 md:w-1/2 lg:w-2/5 xl:w-1/4"
                     />
                   </div>
                 ))

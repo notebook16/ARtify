@@ -80,7 +80,7 @@ const Landing = () => {
 
       <div className='w-80 mt-7' >
         <img
-            src = "../public/photo-collage.png.png"
+            src = "photo-collage.png.png"
 
         />
       </div>
