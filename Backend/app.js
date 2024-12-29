@@ -31,7 +31,7 @@ import chatRouter from "./routes/chat.js";
 
 app.use(
   cors({
-    origin: 'https://artifybackend.onrender.com', // Your frontend's URL
+    origin: 'https://artify-nuea.onrender.com', // Your frontend's URL
     credentials: true, // Allow cookies to be included
   })
 );
