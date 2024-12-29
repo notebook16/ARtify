@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
   // Login function
   const login = async (username, password) => {
     try {
-      const response = await axios.post("http://localhost:8080/api/v1/users/login", {
+      const response = await axios.post("https://artifybackend.onrender.com/api/v1/users/login", {
         username,
         password,
       });
@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
   // Signup function
   const signup = async (username, password, email) => {
     try {
-      const response = await axios.post("http://localhost:8080/api/v1/users/signup", {
+      const response = await axios.post("https://artifybackend.onrender.com/api/v1/users/signup", {
         username,
         password,
         email,
