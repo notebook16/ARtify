@@ -32,7 +32,7 @@ const ImageGenerator = () => {
 
         try {
           const response = await fetch(
-            "http://localhost:8080/api/v1/users/chat",
+            "https://artifybackend.onrender.com/api/v1/users/userChat",
             {
               method: "GET",
               credentials: "include",
@@ -75,7 +75,7 @@ const ImageGenerator = () => {
     const requestBody = { prompt, quick };
 
     try {
-      const response = await fetch("http://localhost:8080/api/v1/users/chat", {
+      const response = await fetch("https://artifybackend.onrender.com/api/v1/users/chat", {
         method: "POST",
         credentials: "include",
         headers: {
