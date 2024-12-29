@@ -32,7 +32,7 @@ const ImageGenerator = () => {
 
         try {
           const response = await fetch(
-            "http://localhost:8080/api/v1/users/userChat",
+            "http://localhost:8080/api/v1/users/chat",
             {
               method: "GET",
               credentials: "include",
