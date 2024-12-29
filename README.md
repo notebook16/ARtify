@@ -53,8 +53,7 @@ Clone the repository to your local machine:
 
 ```bash
 https://github.com/notebook16/ARtify.git
-cd text-to-image-generator
-Here is the entire README in markdown format:
+
 
 ### Install Dependencies
 
