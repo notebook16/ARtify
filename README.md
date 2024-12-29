@@ -52,7 +52,7 @@ This is a full-stack **MERN** application for generating images from text using 
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/text-to-image-generator.git
+https://github.com/notebook16/ARtify.git
 cd text-to-image-generator
 Here is the entire README in markdown format:
 
