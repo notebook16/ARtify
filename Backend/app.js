@@ -7,13 +7,12 @@ import dotenv from "dotenv";
 
 
 dotenv.config();
-
 const app = express();
 
 
 
 import router from "./routes/user.js";
-import chatRouter from "./routes/chat.js";
+import chatRouter from "./routes/chat.js";   
 
 
 
