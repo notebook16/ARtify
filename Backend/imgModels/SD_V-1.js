@@ -1,3 +1,7 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+
 async function stable_Diffusion_V1(data) {
 	
     try {
@@ -8,7 +12,7 @@ async function stable_Diffusion_V1(data) {
 		"https://api-inference.huggingface.co/models/CompVis/stable-diffusion-v1-4",
 		{
 			headers: {
-				Authorization: "Bearer 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",
+				Authorization:`Bearer ${process.env.HUGGING_FACE_API_KEY}`,
 				"Content-Type": "application/json",
 			},
 			method: "POST",

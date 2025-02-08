@@ -1,10 +1,14 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+
 async function stable_Diffusion_35_lab(data) {
     try {
         const response = await fetch(
             "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-3.5-large",
             {
                 headers: {
-                    Authorization: "Bearer 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", // Replace with your Hugging Face API key
+                    Authorization: `Bearer ${process.env.HUGGING_FACE_API_KEY}`, // Replace with your Hugging Face API key
                     "Content-Type": "application/json",
                 },
                 method: "POST",

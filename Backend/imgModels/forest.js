@@ -1,3 +1,7 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+
 async function forest(data) {
 	try{
 
@@ -5,7 +9,7 @@ async function forest(data) {
             "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev",
             {
                 headers: {
-                    Authorization: "Bearer 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",
+                    Authorization: `Bearer ${process.env.HUGGING_FACE_API_KEY}`,
                     "Content-Type": "application/json",
                 },
                 method: "POST",

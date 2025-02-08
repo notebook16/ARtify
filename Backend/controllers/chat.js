@@ -6,12 +6,14 @@ import { forest } from "../imgModels/forest.js";
 import enhancePrompt from '../imgModels/Eprompt.js';
 import fetch from "node-fetch"; // Ensure fetch is available for Node.js
 import { v2 as cloudinary } from "cloudinary";
+import dotenv from "dotenv";
+dotenv.config();
 
 // Cloudinary configuration
 cloudinary.config({
-  cloud_name: "dvofq7l5j",
-  api_key: "228632652414247",
-  api_secret: "NRFTrCR3RpF_5SblmNeHGlvgREg",
+  cloud_name: `${process.env.CLOUD_NAME}`,
+  api_key: `${process.env.CLOUD_API_KEY}`,
+  api_secret: `${process.env.CLOUD_API_SECERET}`,
 });
 
 // Verify Cloudinary setup

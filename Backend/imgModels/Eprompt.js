@@ -1,8 +1,10 @@
 import { HfInference } from "@huggingface/inference";
+import dotenv from "dotenv";
+dotenv.config();
 
 // Function to handle the stream for enhancing the prompt with a timeout
 const enhancePrompt = async (prompt) => {
-  const client = new HfInference("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", {
+  const client = new HfInference(`${process.env.HUGGING_FACE_API_KEY}`, {
     timeout: 10000, // Set the timeout for the client request
   });
 
