@@ -1,5 +1,6 @@
 import React, { createContext, useState, useContext } from "react";
 import axios from "axios"; // Import Axios
+import { API_BASE_URL } from "./config";
 
 // Create the AuthContext
 const AuthContext = createContext();
@@ -11,7 +12,7 @@ export const AuthProvider = ({ children }) => {
   // Login function
   const login = async (username, password) => {
     try {
-      const response = await axios.post("https://artifybackend.onrender.com/api/v1/users/login", {
+      const response = await axios.post(`${API_BASE_URL}/api/v1/users/login`, {
         username,
         password,
       });
@@ -30,7 +31,7 @@ export const AuthProvider = ({ children }) => {
   // Signup function
   const signup = async (username, password, email) => {
     try {
-      const response = await axios.post("https://artifybackend.onrender.com/api/v1/users/signup", {
+      const response = await axios.post(`${API_BASE_URL}/api/v1/users/signup`, {
         username,
         password,
         email,

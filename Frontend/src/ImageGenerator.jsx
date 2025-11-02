@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { API_BASE_URL } from "./config";
 
 const ImageGenerator = () => {
   const [prompt, setPrompt] = useState("");
@@ -32,7 +33,7 @@ const ImageGenerator = () => {
 
         try {
           const response = await fetch(
-            "https://artifybackend.onrender.com/api/v1/users/userChat",
+            `${API_BASE_URL}/api/v1/users/userChat`,
             {
               method: "GET",
               credentials: "include",
@@ -75,7 +76,7 @@ const ImageGenerator = () => {
     const requestBody = { prompt, quick };
 
     try {
-      const response = await fetch("https://artifybackend.onrender.com/api/v1/users/chat", {
+      const response = await fetch(`${API_BASE_URL}/api/v1/users/chat`, {
         method: "POST",
         credentials: "include",
         headers: {
