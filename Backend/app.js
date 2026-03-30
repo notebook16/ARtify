@@ -30,7 +30,7 @@ import chatRouter from "./routes/chat.js";
 
 app.use(
   cors({
-    origin: 'http://localhost:5173', // Your frontend's URL
+    origin: 'https://artify-nuea.onrender.com', // Your frontend's URL
     credentials: true, // Allow cookies to be included
   })
 );
